@@ -1,0 +1,265 @@
+/* General Styles */
+.main-page {
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Wrap buttons on smaller screens */
+}
+
+.custom-button {
+  background-color: #007bff; /* Primary color */
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-button:hover {
+  background-color: #0056b3; /* Darker primary color */
+  transform: scale(1.05);
+}
+
+.custom-button:active {
+  transform: scale(0.95);
+}
+
+.main-page-content {
+  text-align: center;
+  padding: 20px;
+  margin-top: -40pt;
+}
+
+.main-page-invoice {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 575.98px) {
+  .main-page-content {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .main-page-content {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main-page-content {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .main-page-content {
+    padding: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-page-content {
+    padding: 30px;
+  }
+}
+
+
+.demo-logo-vertical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  margin: 16px;
+}
+
+.einvoice-icon-bg {
+  width: 500px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 190px;
+  margin-right: 20px;
+  height: auto;
+  justify-content: center;
+}
+
+.logo {
+  width: 80%;
+  max-width: 120px;
+  height: auto;
+  transition: width 0.3s ease;
+}
+
+.collapsed-logo {
+  width: 200px;
+  transition: width 0.3s ease;
+}
+
+.profile-container {
+  position: relative;
+}
+
+.profile-icon {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  margin-right: 16px; /* Adjust the margin to shift the icon to the left */
+}
+
+.menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.ant-layout-sider {
+  height: 100vh; /* Take the full height of the viewport */
+}
+
+.ant-menu-item {
+  color: #f4f7f9 !important;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.ant-menu-item:hover,
+.ant-menu-item-active,
+.ant-menu-item-selected {
+  background-color: #1890ff !important;
+  color: #fff !important;
+}
+
+.ant-menu-item .anticon {
+  color: #fff !important;
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  background-color: #1890ff !important;
+}
+
+.ant-menu-item-selected {
+  background-color: transparent !important;
+}
+
+.ant-menu-dark .ant-menu-item:hover {
+  background-color: #1890ff !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .einvoice-icon-bg {
+    width: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .einvoice-icon-bg {
+    width: 300px;
+    margin-top: 150px;
+  }
+  
+  .logo {
+    max-width: 100px;
+  }
+
+  .collapsed-logo {
+    width: 150px;
+  }
+
+  .profile-icon {
+    margin-right: 8px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .einvoice-icon-bg {
+    width: 200px;
+    margin-top: 100px;
+  }
+
+  .logo {
+    max-width: 80px;
+  }
+
+  .collapsed-logo {
+    width: 120px;
+  }
+
+  .ant-layout-header {
+    padding-left: 64px;
+  }
+
+  .ant-layout-sider {
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .ant-layout-sider-trigger {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .profile-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .einvoice-icon-bg {
+    width: 150px;
+    margin-top: 80px;
+  }
+
+  .logo {
+    max-width: 60px;
+  }
+
+  .collapsed-logo {
+    width: 100px;
+  }
+
+  .ant-layout-header {
+    padding-left: 48px;
+  }
+
+  .profile-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .custom-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+/* 
+.ant-btn  .ant-btn-text .ant-btn-icon-only{
+
+} */
